@@ -1,7 +1,7 @@
 CODE SEGMENT
-START:
 ASSUME CS:CODE
-MOV AH, 0        
+START:
+MOV AH, 0000H   
 MOV SI, 3000H    
 MOV AL, [SI]    
 INC SI          
