@@ -1,0 +1,12 @@
+CODE SEGMENT
+ASSUME CS:CODE
+MOV AH, 0000H    
+MOV SI, 3000H   
+MOV AL, [SI]    
+INC SI         
+MOV BL, [SI]     
+SUB AL, BL      
+MOV [SI], AL    
+INT 3           
+CODE ENDS
+END START
